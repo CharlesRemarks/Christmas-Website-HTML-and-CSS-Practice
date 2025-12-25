@@ -1,0 +1,486 @@
+:root {
+    --outline-color: #363c32;
+    --starhighlight: #fff300;
+    --star: #fbf236;
+    --starshadow: #d6ce2c;
+    --light-blue: #5b6ee1;
+    --light-red: #ac3232;
+    --light-green: #37946e;
+    --trunk-shadow: #572e27;
+    --trunk: #663931;
+    --1stlayerhighlight: #47b62d;
+    --1stlayer: #40a428;
+    --1stlayershadow: #399123;
+    --2ndlayerhighlight: #459c32;
+    --2ndlayer: #41922e;
+    --2ndlayershadow: #3c872b;
+    --3rdlayerhighlight: #4e943d;
+    --3rdlayer: #458436;
+    --3rdlayershadow: #417a32;
+    --4thlayerhighlight: #527334;
+    --4thlayer: #4b692f;
+    --4thlayershadow: #425c29;
+
+
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(assets/fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Asul;
+    src: url(assets/fonts/Asul-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: rgb(124, 10, 10);
+}
+
+
+header {
+    margin: 0;
+    padding: 2vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: linear-gradient(45deg, #AB0006, transparent),
+                      repeating-linear-gradient(45deg, #ff7070 0%,#f06565 1%, transparent 1%, transparent 2%), rgb(180, 158, 158) repeating-linear-gradient(-45deg, #d57979 0%,#ec7373 1%, transparent 1%, transparent 2%)
+                      ; 
+}
+
+nav {
+    background-color: #e6be9adb;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 0 px black;
+}
+
+main {
+    margin: 5vw;
+    padding: 2vw;
+    background-color: #d6c7a9;
+    border-radius: 2vw;
+    box-shadow: 0.5vw 0.5vw 0vw rgba(0, 0, 0, 0.545);
+}
+
+img {
+    width: max(7vw, 1.5rem);
+}
+
+.name {
+    display: inline;
+    font-family: Asul;
+    letter-spacing: 0.2vw;
+    color: silver;
+    margin: 0;
+    padding-left: 2vw;
+}
+
+.Greeting {
+    font-family: Asul, Arial, Verdana;
+    font-size: max(3vw, 1rem);
+    color:rgb(58, 32, 32);
+    margin: 0;
+}
+
+a {
+    font-family: Oswald, Arial, Verdana;
+    font-size: max(3vw, 1rem);
+    width: 20rem;
+    height: max(5vw, 2rem);
+    letter-spacing: 1vw;
+    text-decoration: none;
+    color:#12251F;
+}
+
+a:hover {
+    color: #77121E
+}
+
+.welcome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.homegreet{
+    display: flex;
+    width: 50rem;
+    justify-content: center;
+    align-items: center;
+    font-size: max(5vw, 1rem);
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    color: #0D3E27
+}
+
+p {
+    color: #4d3b34;
+    font-size: max(2vw, 0.8rem);
+    font-family: Oswald, Arial, Verdana;
+}
+
+.signature {
+    margin-bottom: 0;
+}
+
+h1::first-letter {font-size: max(7vw, 2rem);}
+.second {font-size: max(6vw, 1.8rem);}
+.third {font-size: max(5vw, 1.6rem);}
+.fourth {font-size: max(4vw, 1.4rem);}
+.fifth {font-size: max(3.5vw, 1.2rem);}
+.sixth {font-size: max(3vw, 1.1rem);}
+.seventh {font-size: max(2.5vw, 1rem);}
+
+.eight {font-size: max(7vw, 2rem);}
+.ninth {font-size: max(6vw, 1.8rem);}
+.tenth {font-size: max(5vw, 1.6rem);}
+.eleventh {font-size: max(4vw, 1.4rem);}
+.twelfth {font-size: max(3.5vw, 1.2rem);}
+.thirteenth {font-size: max(3vw, 1.1rem);}
+.fourteenth {font-size: max(2.5vw, 1rem);}
+
+.pixel-container {
+    width: 50vw;
+    height: 50vw;
+}
+
+.pixels {
+    width: 2vw;
+    height: 2vw;
+    box-shadow: 24vw 0vw var(--starhighlight),
+                26vw 0vw var(--starhighlight),
+                24vw 2vw var(--star),
+                26vw 2vw var(--star),
+                24vw 4vw var(--starshadow),
+                26vw 4vw var(--starshadow),
+                22vw 2vw var(--starhighlight),
+                28vw 2vw var(--starshadow),
+                /* star */
+
+                22vw 6vw var(--outline-color),
+                24vw 6vw var(--outline-color),
+                26vw 6vw var(--outline-color),
+                28vw 6vw var(--outline-color),
+
+                18vw 8vw var(--outline-color),
+                20vw 8vw var(--outline-color),
+                22vw 8vw var(--1stlayerhighlight),
+                24vw 8vw var(--1stlayerhighlight),
+                26vw 8vw var(--1stlayerhighlight),
+                28vw 8vw var(--1stlayerhighlight),
+                30vw 8vw var(--outline-color),
+                32vw 8vw var(--outline-color),
+
+                16vw 10vw var(--outline-color),
+                18vw 10vw var(--1stlayerhighlight),
+                20vw 10vw var(--1stlayerhighlight),
+                22vw 10vw var(--1stlayer),
+                24vw 10vw var(--1stlayer),
+                26vw 10vw var(--1stlayer),
+                28vw 10vw var(--light-red),
+                30vw 10vw var(--1stlayerhighlight),
+                32vw 10vw var(--1stlayerhighlight),
+                34vw 10vw var(--outline-color),
+
+                16vw 12vw var(--outline-color),
+                18vw 12vw var(--1stlayershadow),
+                20vw 12vw var(--1stlayer),
+                22vw 12vw var(--1stlayer),
+                24vw 12vw var(--light-blue),
+                26vw 12vw var(--1stlayer),
+                28vw 12vw var(--1stlayer),
+                30vw 12vw var(--1stlayer),
+                32vw 12vw var(--1stlayershadow),
+                34vw 12vw var(--outline-color),
+
+                14vw 14vw var(--outline-color),
+                16vw 14vw var(--2ndlayerhighlight),
+                18vw 14vw var(--outline-color),
+                20vw 14vw var(--outline-color),
+                22vw 14vw var(--1stlayershadow),
+                24vw 14vw var(--1stlayershadow),
+                26vw 14vw var(--1stlayershadow),
+                28vw 14vw var(--1stlayershadow),
+                30vw 14vw var(--outline-color),
+                32vw 14vw var(--outline-color),
+                34vw 14vw var(--2ndlayerhighlight),
+                36vw 14vw var(--outline-color),
+
+                12vw 16vw var(--outline-color),
+                14vw 16vw var(--2ndlayer),
+                16vw 16vw var(--2ndlayerhighlight),
+                18vw 16vw var(--2ndlayerhighlight),
+                20vw 16vw var(--2ndlayerhighlight),
+                22vw 16vw var(--outline-color),
+                24vw 16vw var(--outline-color),
+                26vw 16vw var(--outline-color),
+                28vw 16vw var(--outline-color),
+                30vw 16vw var(--2ndlayerhighlight),
+                32vw 16vw var(--2ndlayerhighlight),
+                34vw 16vw var(--2ndlayerhighlight),
+                36vw 16vw var(--2ndlayer),
+                38vw 16vw var(--outline-color),
+
+                14vw 18vw var(--outline-color),
+                16vw 18vw var(--2ndlayer),
+                18vw 18vw var(--light-green),
+                20vw 18vw var(--2ndlayerhighlight),
+                22vw 18vw var(--2ndlayerhighlight),
+                24vw 18vw var(--2ndlayerhighlight),
+                26vw 18vw var(--2ndlayerhighlight),
+                28vw 18vw var(--2ndlayerhighlight),
+                30vw 18vw var(--2ndlayerhighlight),
+                32vw 18vw var(--light-red),
+                34vw 18vw var(--2ndlayer),
+                36vw 18vw var(--outline-color),
+
+                12vw 20vw var(--outline-color),
+                14vw 20vw var(--outline-color),
+                16vw 20vw var(--2ndlayershadow),
+                18vw 20vw var(--2ndlayer),
+                20vw 20vw var(--2ndlayer),
+                22vw 20vw var(--2ndlayer),
+                24vw 20vw var(--star),
+                26vw 20vw var(--2ndlayer),
+                28vw 20vw var(--light-blue),
+                30vw 20vw var(--2ndlayer),
+                32vw 20vw var(--2ndlayer),
+                34vw 20vw var(--2ndlayershadow),
+                36vw 20vw var(--outline-color),
+                38vw 20vw var(--outline-color),
+
+                10vw 22vw var(--outline-color),
+                12vw 22vw var(--3rdlayerhighlight),
+                14vw 22vw var(--3rdlayerhighlight),
+                16vw 22vw var(--outline-color),
+                18vw 22vw var(--outline-color),
+                20vw 22vw var(--2ndlayershadow),
+                22vw 22vw var(--2ndlayershadow),
+                24vw 22vw var(--2ndlayershadow),
+                26vw 22vw var(--2ndlayershadow),
+                28vw 22vw var(--2ndlayershadow),
+                30vw 22vw var(--2ndlayershadow),
+                32vw 22vw var(--outline-color),
+                34vw 22vw var(--outline-color),
+                36vw 22vw var(--3rdlayerhighlight),
+                38vw 22vw var(--3rdlayerhighlight),
+                40vw 22vw var(--outline-color),
+
+                8vw 24vw var(--outline-color),
+                10vw 24vw var(--3rdlayer),
+                12vw 24vw var(--3rdlayer),
+                14vw 24vw var(--3rdlayer),
+                16vw 24vw var(--3rdlayerhighlight),
+                18vw 24vw var(--3rdlayerhighlight),
+                20vw 24vw var(--outline-color),
+                22vw 24vw var(--outline-color),
+                24vw 24vw var(--outline-color),
+                26vw 24vw var(--outline-color),
+                28vw 24vw var(--outline-color),
+                30vw 24vw var(--outline-color),
+                32vw 24vw var(--3rdlayerhighlight),
+                34vw 24vw var(--3rdlayerhighlight),
+                36vw 24vw var(--3rdlayer),
+                38vw 24vw var(--3rdlayer),
+                40vw 24vw var(--3rdlayer),
+                42vw 24vw var(--outline-color),
+
+                8vw 26vw var(--outline-color),
+                10vw 26vw var(--3rdlayershadow),
+                12vw 26vw var(--3rdlayershadow),
+                14vw 26vw var(--light-red),
+                16vw 26vw var(--3rdlayer),
+                18vw 26vw var(--3rdlayerhighlight),
+                20vw 26vw var(--3rdlayerhighlight),
+                22vw 26vw var(--3rdlayerhighlight),
+                24vw 26vw var(--3rdlayerhighlight),
+                26vw 26vw var(--3rdlayerhighlight),
+                28vw 26vw var(--3rdlayerhighlight),
+                30vw 26vw var(--3rdlayerhighlight),
+                32vw 26vw var(--3rdlayerhighlight),
+                34vw 26Vw var(--3rdlayer),
+                36vw 26vw var(--light-green),
+                38vw 26vw var(--3rdlayershadow),
+                40vw 26vw var(--3rdlayershadow),
+                42vw 26vw var(--outline-color),
+
+                10vw 28vw var(--outline-color),
+                12vw 28vw var(--3rdlayershadow),
+                14vw 28vw var(--3rdlayershadow),
+                16vw 28Vw var(--3rdlayer),
+                18vw 28vw var(--3rdlayer),
+                20vw 28vw var(--3rdlayer),
+                22vw 28vw var(--3rdlayer),
+                24vw 28vw var(--3rdlayer),
+                26vw 28vw var(--3rdlayer),
+                28vw 28vw var(--light-blue),
+                30vw 28vw var(--3rdlayer),
+                32vw 28vw var(--3rdlayer),
+                34vw 28vw var(--3rdlayer),
+                36vw 28vw var(--3rdlayershadow),
+                38vw 28vw var(--3rdlayershadow),
+                40vw 28vw var(--outline-color),
+
+                10vw 30vw var(--outline-color),
+                12vw 30vw var(--outline-color),
+                14vw 30vw var(--3rdlayershadow),
+                16vw 30Vw var(--3rdlayershadow),
+                18vw 30vw var(--3rdlayershadow),
+                20vw 30vw var(--star),
+                22vw 30vw var(--3rdlayer),
+                24vw 30vw var(--3rdlayer),
+                26vw 30vw var(--3rdlayer),
+                28vw 30vw var(--3rdlayer),
+                30vw 30vw var(--3rdlayer),
+                32vw 30vw var(--3rdlayershadow),
+                34vw 30vw var(--3rdlayershadow),
+                36vw 30vw var(--3rdlayershadow),
+                38vw 30vw var(--outline-color),
+                40vw 30vw var(--outline-color),
+
+                8vw 32vw var(--outline-color),
+                10vw 32vw var(--4thlayerhighlight),
+                12vw 32vw var(--4thlayerhighlight),
+                14vw 32vw var(--outline-color),
+                16vw 32vw var(--outline-color),
+                18vw 32vw var(--3rdlayershadow),
+                20vw 32vw var(--3rdlayershadow),
+                22vw 32vw var(--3rdlayershadow),
+                24vw 32vw var(--3rdlayershadow),
+                26vw 32vw var(--3rdlayershadow),
+                28vw 32vw var(--3rdlayershadow),
+                30vw 32vw var(--3rdlayershadow),
+                32vw 32vw var(--3rdlayershadow),
+                34vw 32Vw var(--outline-color),
+                36vw 32vw var(--outline-color),
+                38vw 32vw var(--4thlayerhighlight),
+                40vw 32vw var(--4thlayerhighlight),
+                42vw 32vw var(--outline-color),
+
+                6vw 34vw var(--outline-color),
+                8vw 34vw var(--4thlayer),
+                10vw 34vw var(--4thlayer),
+                12vw 34vw var(--4thlayer),
+                14vw 34vw var(--4thlayerhighlight),
+                16vw 34vw var(--4thlayerhighlight),
+                18vw 34vw var(--outline-color),
+                20vw 34vw var(--outline-color),
+                22vw 34vw var(--outline-color),
+                24vw 34vw var(--outline-color),
+                26vw 34vw var(--outline-color),
+                28vw 34vw var(--outline-color),
+                30vw 34vw var(--outline-color),
+                32vw 34vw var(--outline-color),
+                34vw 34Vw var(--4thlayerhighlight),
+                36vw 34vw var(--4thlayerhighlight),
+                38vw 34vw var(--4thlayer),
+                40vw 34vw var(--light-blue),
+                42vw 34vw var(--4thlayer),
+                44vw 34vw var(--outline-color),
+                
+                6vw 36vw var(--outline-color),
+                8vw 36vw var(--4thlayer),
+                10vw 36vw var(--light-green),
+                12vw 36vw var(--4thlayer),
+                14vw 36vw var(--4thlayer),
+                16vw 36vw var(--4thlayer),
+                18vw 36vw var(--4thlayerhighlight),
+                20vw 36vw var(--4thlayerhighlight),
+                22vw 36vw var(--4thlayerhighlight),
+                24vw 36vw var(--4thlayerhighlight),
+                26vw 36vw var(--4thlayerhighlight),
+                28vw 36vw var(--4thlayerhighlight),
+                30vw 36vw var(--4thlayerhighlight),
+                32vw 36vw var(--4thlayerhighlight),
+                34vw 36Vw var(--4thlayer),
+                36vw 36vw var(--light-green),
+                38vw 36vw var(--4thlayer),
+                40vw 36vw var(--4thlayer),
+                42vw 36vw var(--4thlayer),
+                44vw 36vw var(--outline-color),
+                
+                6vw 38vw var(--outline-color),
+                8vw 38vw var(--4thlayershadow),
+                10vw 38vw var(--4thlayer),
+                12vw 38vw var(--4thlayer),
+                14vw 38vw var(--star),
+                16vw 38vw var(--4thlayer),
+                18vw 38vw var(--4thlayer),
+                20vw 38vw var(--4thlayer),
+                22vw 38vw var(--4thlayer),
+                24vw 38vw var(--4thlayer),
+                26vw 38vw var(--4thlayer),
+                28vw 38vw var(--4thlayer),
+                30vw 38vw var(--light-red),
+                32vw 38vw var(--4thlayer),
+                34vw 38Vw var(--4thlayer),
+                36vw 38vw var(--4thlayer),
+                38vw 38vw var(--4thlayer),
+                40vw 38vw var(--4thlayer),
+                42vw 38vw var(--4thlayershadow),
+                44vw 38vw var(--outline-color),
+
+                8vw 40vw var(--outline-color),
+                10vw 40vw var(--4thlayershadow),
+                12vw 40vw var(--4thlayershadow),
+                14vw 40vw var(--4thlayer),
+                16vw 40vw var(--4thlayer),
+                18vw 40vw var(--light-red),
+                20vw 40vw var(--4thlayer),
+                22vw 40vw var(--4thlayer),
+                24vw 40vw var(--star),
+                26vw 40vw var(--4thlayer),
+                28vw 40vw var(--4thlayer),
+                30vw 40vw var(--4thlayer),
+                32vw 40vw var(--4thlayer),
+                34vw 40Vw var(--light-blue),
+                36vw 40vw var(--4thlayer),
+                38vw 40vw var(--4thlayershadow),
+                40vw 40vw var(--4thlayershadow),
+                42vw 40vw var(--outline-color),
+
+                10vw 42vw var(--outline-color),
+                12vw 42vw var(--outline-color),
+                14vw 42vw var(--4thlayershadow),
+                16vw 42vw var(--4thlayershadow),
+                18vw 42vw var(--4thlayershadow),
+                20vw 42vw var(--4thlayershadow),
+                22vw 42vw var(--4thlayershadow),
+                24vw 42vw var(--4thlayershadow),
+                26vw 42vw var(--4thlayershadow),
+                28vw 42vw var(--4thlayershadow),
+                30vw 42vw var(--4thlayershadow),
+                32vw 42vw var(--4thlayershadow),
+                34vw 42Vw var(--4thlayershadow),
+                36vw 42vw var(--4thlayershadow),
+                38vw 42vw var(--outline-color),
+                40vw 42vw var(--outline-color),
+
+                14vw 44vw var(--outline-color),
+                16vw 44vw var(--outline-color),
+                18vw 44vw var(--outline-color),
+                20vw 44vw var(--outline-color),
+                22vw 44vw var(--outline-color),
+                24vw 44vw var(--outline-color),
+                26vw 44vw var(--outline-color),
+                28vw 44vw var(--outline-color),
+                30vw 44vw var(--outline-color),
+                32vw 44vw var(--outline-color),
+                34vw 44Vw var(--outline-color),
+                36vw 44vw var(--outline-color),
+
+                24vw 46vw var(--trunk-shadow),
+                26vw 46vw var(--trunk),
+                24vw 48vw var(--trunk-shadow),
+                26vw 48vw var(--trunk)
+                ;
+}
+
